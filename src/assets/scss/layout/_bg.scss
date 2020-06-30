@@ -28,10 +28,7 @@
   }
 
   &:before {
-    @include vendor(
-      'transition',
-      'background-color #{_duration(bg)} ease-in-out'
-    );
+
     @include vendor('transition-delay', '#{_duration(intro)}');
     background-image: none, //APPLY FILTERS TO MALICK BACKGROUND PICS IF NEED
       url('../../images/overlay.png');

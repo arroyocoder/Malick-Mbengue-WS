@@ -5,6 +5,15 @@ module.exports = {
     description: 'Malick Mbengue Ofical Website',
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: 'images'
+      }
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -18,6 +27,16 @@ module.exports = {
         icon: 'public/icons/malickLogo.png', // This path is relative to the root of the site.
       },
     },
+    {
+    resolve: `gatsby-plugin-nprogress`,
+    options: {
+      // Setting a color is optional.
+      color: `tomato`,
+      // Disable the loading spinner.
+      showSpinner: true,
+    },
+  },
     'gatsby-plugin-sass',
+    `gatsby-plugin-offline`,
   ],
 }

@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
 .box {
   border: 0;
   border-bottom: 1px solid white;
   grid-gap: 30px;
 }
-
-
 
 .pic-top {
   position: absolute;
@@ -13,26 +12,46 @@
   left: 0;
 }
 
+.sticky-btn-container {
+  position: sticky;
+  top: 80px;
+  display: inline-block;
+
+}
+
+.sticky-btn{
+  background: #D13B3B;
+
+}
+
+
+
 .tex-combination {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 
+.bio-picture {
+  max-height: 250px;
+}
+
 iframe {
   border-radius: 15px;
   height: 400px;
-
-}
-
-iframe:hover {
-  opacity: 100%;
 }
 
 @media (max-width: 850px) {
   .box {
     grid-template-columns: 1fr;
   }
-  iframe{
-    height: 250px;
+
+  iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bio-picture {
+    max-height: 100px;
   }
 }

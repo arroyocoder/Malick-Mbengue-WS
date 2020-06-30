@@ -5,18 +5,18 @@ import 'tachyons';
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <a href="https://www.instagram.com/malickmbenguearroyo/?hl=es" taget="blank"><span className="icon fa-instagram"></span></a>
-      <a href="https://www.youtube.com/channel/UCisnUFE34yH0i6vnWwQGqKw" taget="blank"><span className="icon fa-facebook"></span></a>
-      <a href="https://www.youtube.com/channel/UCisnUFE34yH0i6vnWwQGqKw" taget="blank"><span className="icon fa-youtube"></span></a>
+      <a href="https://www.instagram.com/malickmbenguearroyo/?hl=es" target="_blank"><span className="icon fa-instagram"></span></a>
+      <a href="https://www.facebook.com/Malickpercusion/" target="_blank"><span className="icon fa-facebook"></span></a>
+      <a href="https://www.youtube.com/channel/UCisnUFE34yH0i6vnWwQGqKw" target="_blank"><span className="icon fa-youtube"></span></a>
     </div>
     <div className="content">
       <div className="inner">
         <h1>Malick Mbengue</h1>
         <p>
-          <span className="gold">Malick Mbengue Arroyo</span> es un percusionista y baterista Senegalés nacido en España que <br/>
+          <span className="gold">Malick Mbengue Arroyo</span> es un percusionista y baterista nacido en Cádiz que <br/>
           ha desarrollado con éxito una fusión entre la <span className="gold">percusión flamenca, africana y latina</span>, <br/>
-          y con la cual a conseguido un sonido exclusivo que no pasa desapercibido para los <br/>
-          amantes y músicos de<span className="gold"> elite de la música moderna</span>.
+          y con la cual ha conseguido un sonido exclusivo que no pasa desapercibido para los <br/>
+          músicos y amantes de<span className="gold"> de la música moderna</span>.
         </p>
       </div>
     </div>
