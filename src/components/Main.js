@@ -702,9 +702,16 @@ class Main extends React.Component {
           : ''}`} style={{
           display: 'none'
         }}>
+        <div className="sticky-btn-container">
+        <form action="button" className="sticky-btn">
+          <a href="" onclick="return false close_window()"><input  type="button" value="atras" /></a>
+        </form>
+        </div>
         <div>
           <h2 className="major">IMAGENES</h2>
         </div>
+
+
 
         <ImageGalery/> {close}
       </article>
@@ -717,6 +724,11 @@ class Main extends React.Component {
           : ''}`} style={{
           display: 'none'
         }}>
+        <div className="sticky-btn-container">
+        <form action="button" className="sticky-btn">
+          <a href="" onclick="return false close_window()"><input  type="button" value="atras" /></a>
+        </form>
+        </div>
         <h2 className="major">Contacto</h2>
         <form method="post" action="#">
           <div className="field half first">
