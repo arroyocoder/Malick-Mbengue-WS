@@ -702,8 +702,8 @@ class Main extends React.Component {
           : ''}`} style={{
           display: 'none'
         }}>
-        <div className="sticky-btn-container">
-        <form action="button" className="sticky-btn">
+        <div >
+        <form action="button">
           <a href="" onclick="return false close_window()"><input  type="button" value="atras" /></a>
         </form>
         </div>
