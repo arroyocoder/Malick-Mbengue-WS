@@ -1,15 +1,9 @@
 import PropTypes from 'prop-types'
 import 'tachyons'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
-import pic4 from '../images/pic4.jpg'
-import pic033 from '../images/pic033.jpg'
 import malickCajonFlamencoTwo from '../images/malickCajonFlamencoTwo.jpg';
-import VideoGalery from './VideoGalery';
 import './VideoStyle.css';
-import ImageGalery from './ImageGalery'
+import ImageGalery from '../pages/ImageGalery'
 
 class Main extends React.Component {
   render() {
@@ -32,12 +26,26 @@ class Main extends React.Component {
           : ''}`} style={{
           display: 'none'
         }}>
+
         <h2 className="major">Bio</h2>
-        <span className=" main">
-          <img src={malickCajonFlamencoTwo} alt=""/>
+
+        <div className="sticky-btn-container">
+        <form action="button" className="sticky-btn">
+          <a href="" onclick="return false close_window()"><input  type="button" value="atras" /></a>
+        </form>
+        </div>
+
+
+
+
+
+
+
+        <span className="main">
+          <img src={malickCajonFlamencoTwo} alt="Image of Malick Mbengue Arroyo" className="bio-picture"/>
         </span>
         <p className="tex-combination">
-          Malick Mbengue Arroyo (30, 04, 1985) percusionista y baterista hispano-senegalés nacido en España.
+          Malick Mbengue Arroyo (30/04/1985) percusionista y baterista, de padre senegalés, nacido en Cádiz, cuna del flamenco a nivel internacional.
         </p>
 
         <h3 className="major">Comienzos</h3>
@@ -47,13 +55,21 @@ class Main extends React.Component {
           <a href="https://es.wikipedia.org/wiki/C%C3%A1diz" target="blank">
             &nbsp;Cádiz&nbsp;
           </a>
-          (Andalucía) en 1985, Malick crece dentro de un marco musical influenciado por la música africana y flamenca.
+          Malick crece dentro de un marco musical influenciado por la música africana y flamenca.
           <br/>
-          Fue a la edad de siete años cuando el percusionista, de forma totalmente autodidacta, comenzó a experimentar con el Cajón flamenco y el Djembe africano logrando formar su primera banda
+          Fue a la edad de siete años cuando el percusionista, de forma autodidacta, comenzó a experimentar con el cajón flamenco y el djembe africano.
+          <br/>
+          Formo junto a
+          <a href="https://www.facebook.com/leonor.iglesias.7" target="blank">
+            &nbsp;Leo power&nbsp; y
+            <a href="https://es.linkedin.com/in/nino-ruiz-9a36b0183" target="blank">
+              &nbsp;Nino Ruiz&nbsp;
+            </a>
+          </a>, su primera banda
           <a href="https://www.facebook.com/Aguatap%C3%A1-281903694767/" target="blank">
             &nbsp;'Aguatapa'&nbsp;
           </a>
-          a la edad de doce años,.
+          a la edad de doce años.
           <br/>
           <br/>
           Como percusionista de Cajón consolidado en su ciudad, Malick completo estudios de percusión y batería en la
@@ -67,14 +83,14 @@ class Main extends React.Component {
           <a href="https://conservatoriomanueldefalla.es/historia/" target="blank">
             &nbsp;Academia Nacional de Música Manuel de Falla&nbsp;
           </a>
-          en Cádiz, completando los últimos años de estudio en la ciudad de Londres.
+          de Cádiz, completando los últimos años de estudio en la ciudad de Londres.
           <br/>
           <br/>
           Durante los años siguientes, Malick formó parte de una serie de bandas basadas en el jazz junto con los maestros y músicos consolidados de la escuela
           <a href="https://ucaescuelamusica.com/" target="blank">
             &nbsp;Escuela de Música Moderna&nbsp;
           </a>
-          de Cadiz y como resultado de estas colaboraciones se formo la banda gaditana
+          de Cadiz y como resultado de estas colaboraciones se formó la banda gaditana
           <a href="https://clasijazz.com/tumbando-a-monk-abriendo-el-thelonious/" target="blank">
             &nbsp;Tumbando a Monk&nbsp;
           </a>
@@ -276,7 +292,7 @@ class Main extends React.Component {
           entre otros.
           <br/>
           <br/>
-          El Artista asistió a varias clases magistrales organizadas por percusionistas y bateristas de alto nivel como
+          Malick también asistió a varias clases magistrales organizadas por percusionistas y bateristas de alto nivel como
           <a href="https://es.wikipedia.org/wiki/Giovanni_Hidalgo" target="blank">
             &nbsp;Giovanni Hidalgo&nbsp;
           </a>
@@ -390,10 +406,10 @@ class Main extends React.Component {
           Sus últimos y mas actuales proyectos incluyen una gira por U.S.A en 2019 con el proyecto personal de
           <a href="https://guitarraespañola.net/juani-de-la-isla/" target="blank">
             &nbsp;Juani de la Isla&nbsp;
-          </a>, unos de los grandes guitarristas flamencos españoles. Adicionalmente Malick se encuentra bajo la producción de el primer disco de su nueva formacion
+          </a>, (ver en MEDIA)unos de los grandes guitarristas flamencos españoles. Adicionalmente Malick se encuentra bajo la producción de el primer disco de su nueva formacion
           <a href="https://www.facebook.com/Africaiband/" target="blank">
             &nbsp;“Africai”&nbsp;
-          </a>, una banda logra fusionar elementos del jazz, la música africana y el flamenco.
+          </a>, una banda que logra fusionar elementos del jazz, la música africana y el flamenco.
 
         </p>
         {close}
@@ -407,8 +423,13 @@ class Main extends React.Component {
           : ''}`} style={{
           display: 'none'
         }}>
-        <h2 className="tc">John Cervantes sextet</h2>
-        <p className="tex-combination tc">
+        <div className="sticky-btn-container">
+        <form action="button" className="sticky-btn">
+          <a href="" onclick="return false close_window()"><input  type="button" value="atras" /></a>
+        </form>
+        </div>
+        <h2 className="tl overline">John Cervantes Sextet</h2>
+        <p className="tex-combination tl">
           Conducida por una sección de ritmo electrificante formada por batería, cajón y baile flamenco, la banda visita los temas jazzisticos originales del pianista
           <a href="https://www.johncervantes.co.uk/bio" target="blank">
             &nbsp;Jonh Cervanes&nbsp;</a>
@@ -430,68 +451,66 @@ class Main extends React.Component {
           <a href="http://www.garethlockrane.com/biography.html" target="blank">
             &nbsp;Gareth Lockrane&nbsp;
           </a>
-          (flutes);
+          (flutes),
           <a href="https://www.johncervantes.co.uk/bio" target="blank">
             &nbsp;John Cervantes&nbsp;
           </a>
-          (piano);
+          (piano)
           <a href="https://www.sandysuchodolski.co.uk/" target="blank">
             &nbsp;Sandy Suchodolski&nbsp;
           </a>
-          (double bass);
+          (double bass),
           <a href="http://www.jondesbruslais.com/" target="blank">
             &nbsp;Jon Desbruslais&nbsp;
           </a>
-          (drum kit);
+          (drum kit)
           <a href="http://malickmbengue.com" target="blank">
             &nbsp;Malick Mbengue&nbsp;
           </a>
           (cajón, percusión).
         </p>
 
-        <div className="grow box">
+        <div className="box">
           <div className="iframe-hide">
 
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8p7VL_VEoxc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <iframe title="John Cervantes Quintet" width="100%" height="100%" src="https://www.youtube.com/embed/8p7VL_VEoxc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
           </div>
         </div>
 
-        <h2 className="tc">Africai</h2>
-        <p className="tex-combination tc">AFRICAI, es un proyecto donde músicos de Gambia y Cádiz unen sus inquietudes musicales y se produce lo que se podria llamar AFROFLAMENCO.
-          <br/>
-          Este proyecto es iniciado por:
+        <h2 className="tl">Africai</h2>
+        <p className="tex-combination tl">AFRICAI, es un proyecto donde músicos de Gambia y Cádiz unen sus inquietudes musicales y se produce lo que se podria llamar AFROFLAMENCO. Este proyecto es iniciado por:
           <br/>
           <a href="https://www.facebook.com/laleopower/" target="blank">
             &nbsp;Leo Power&nbsp;
           </a>, cantaora de Cádiz inmersa en otras músicas del mundo.
           <br/>
-          <a href="" target="blank">
+          <a href="https://www.mattersmusical.com/artists/sura-susso/" target="blank">
             &nbsp;Sura Susso griot&nbsp;
           </a>
           , cantante, korista, percusionista y compositor de Gambia.
           <br/>
-          <a href="" target="blank">
-            &nbsp;Pablo Dominguez&nbsp;
+          <a href="http://jesusolmedoflamenco.com/es_ES/pablo-dominguez/" target="blank">
+            &nbsp;Pablo Domínguez&nbsp;
           </a>, percusionista, guitarrista y bajista de Cádiz.
           <br/>
           <a href="" target="blank">
-            &nbsp;Malick Mbengue&nbsp;
+            Malick Mbengue&nbsp;
           </a>
           , percusionista nacido en Cádiz de descendencia parental de Senegal.
 
         </p>
-        <div className="grow box">
+        <div className="box">
 
           <div className="iframe-hide">
 
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rOamjTaH3X0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <iframe title="Africai Flamenco Y musica Africana" width="100%" height="100%" src="https://www.youtube.com/embed/rOamjTaH3X0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
           </div>
 
         </div>
 
-        <h2 className="tc">Tumbando a Monk</h2>
-        <p className="tex-combination tc">Tumbando a Monk es un sexteto de latin-jazz formado en
+        <h2 className="tl">Tumbando a Monk</h2>
+        <p className="tex-combination tl">Tumbando a Monk es un sexteto de latin-jazz formado en
           <a href="https://es.wikipedia.org/wiki/C%C3%A1diz" target="blank">
             &nbsp;Cádiz&nbsp;
           </a>
@@ -500,32 +519,33 @@ class Main extends React.Component {
             &nbsp;Thelonious Monk&nbsp;
           </a>. Para ello se sirve de temas originales y de algunas de sus composiciones para transmitir el espíritu de este insigne pianista, empleando para ello ese peculiar sentido rítmico en las melodías y esas armonizaciones disonantes y sofisticadas tan características que impregnan todos sus temas.
           <br/>
-          <a href="http://juliansanchezmusic.com/galeria/" target="blank">&nbsp;Julián Sánchez</a>: Trompeta, fliscornio y percusiones menores.
+          <a href="http://juliansanchezmusic.com/galeria/" target="blank">&nbsp;Julián Sánchez</a>: Trompeta, fliscorno y percusiones menores.
           <a href="https://www.javiergaliana.es/#page1" target="blank">
 
-            &nbsp;Javier Galiana&nbsp;</a>: Piano.
+            &nbsp;Javier Galiana&nbsp;</a>(piano),
           <a href="http://malickmbengue.com" target="blank">
             &nbsp;Malick Mbengue&nbsp;
-          </a>: Congas y cajón.
+          </a>(congas y cajón),
           <a href="https://jambabrassband.com/miembros/bio/javier-bermudez/" target="blank">
             &nbsp;Javier Bermúdez&nbsp;
-          </a>: Bajo eléctrico.
+          </a>: (bajo eléctrico),
           <a href="https://clasijazz.com/tumbando-a-monk-abriendo-el-thelonious/" target="blank">
             &nbsp;Juan Sainz&nbsp;
-          </a>: Batería.
+          </a>: (batería),
           <a href="http://www.pedrocortejosa.com/" target="blank">
-            &nbsp;Pedro Cortejosa&nbsp;</a>: Saxo tenor y percusiones menores.
+            &nbsp;Pedro Cortejosa&nbsp;</a>
+          (saxo tenor y percusiones menores).
         </p>
-        <div className="grow box">
+        <div className="box">
           <div className="iframe-hide">
 
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_Mz_MpIxHHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <iframe title="Tumbando a Monk Latin jazz" width="100%" height="100%" src="https://www.youtube.com/embed/_Mz_MpIxHHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
           </div>
         </div>
 
-        <h2 className="tc">Casa Flamenca Alburquerque</h2>
-        <p className="tex-combination tc">Uno de los grandes guitarristas andaluces de nuestro tiempo
+        <h2 className="tl">Casa Flamenca Alburquerque</h2>
+        <p className="tex-combination tl">Uno de los grandes guitarristas andaluces
           <a href="https://guitarraespañola.net/juani-de-la-isla/" target="blank">
             &nbsp;Juani de la Isla&nbsp;
           </a>, dentro del ciclo
@@ -536,7 +556,7 @@ class Main extends React.Component {
           <a href="http://www.nhccnm.org/" target="blank">
             &nbsp;National Hispanic Culture Centre (University of New Mexico)&nbsp;
           </a>
-          , presenta este quinteto junto a una banda compuesta por el pianista puerto riqueno
+          , presenta este quinteto junto a una banda compuesta por el pianista puertorriqueño
           <a href="https://www.marianomoralesmusic.com/" target="blank">
             &nbsp;Mariano Morales (Ricky Martin, Marc Anthony)&nbsp;
           </a>, trombonista americano
@@ -551,32 +571,32 @@ class Main extends React.Component {
           </a>
           <a href="https://www.casaflamenca.org/our-instructors/" target="blank">
             (coordinadora Programa Casa Clamenca)
-          </a>, el caotaor gaditano
+          </a>, el cantaor gaditano
           <a href="http://tridimensional.com/events/alejandro-silva/" target="blank">
             &nbsp;Alejandro Silva&nbsp;
           </a>
-          y el percusionista gaditano/senegalés
+          y el percusionista gaditano
           <a href="http://malickmbengue.com" target="blank">
             &nbsp;Malick Mbengue&nbsp;
           </a>
           <br/>
           Gira realizada en 2019 en el Suroeste de U.S.A.
         </p>
-        <div className="grow box">
+        <div className="box">
 
           <div className="iframe-hide">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4yrsRS0s9r8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <iframe title="Juani de la Isla Guitarra Flamenca" width="100%" height="100%" src="https://www.youtube.com/embed/4yrsRS0s9r8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
           </div>
         </div>
 
-        <h2 className="tc">Cadiz Vibra</h2>
-        <p className="tex-combination tc">Trio de flamenco fusión compuesto por la cantaora de flamenco
+        <h2 className="tl">Cadiz Vibra</h2>
+        <p className="tex-combination tl">Trio de flamenco fusión compuesto por la cantaora de flamenco
           <a href="http://malickmbengue.com" target="blank">
             &nbsp;Leo Power
           </a>
-          , el guitarrista portuense
+          , el guitarrista gaditano(Puerto de Santa Maria)
           <a href="http://malickmbengue.com" target="blank">
-            &nbsp;Pablo Dominguez&nbsp;
+            &nbsp;Pablo Domínguez&nbsp;
           </a>
           y
           <a href="http://malickmbengue.com" target="blank">
@@ -589,15 +609,15 @@ class Main extends React.Component {
             &nbsp;ida y vuelta&nbsp;
           </a>
           pasando por géneros de la música contemporánea como el jazz, el flamenco y el latin</p>
-        <div className="grow box">
+        <div className="box">
 
           <div className="iframe-hide">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3WKw0QdJ-AI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <iframe title="Leo power Pablo Dominuez Flamenco Fusion" width="100%" height="100%" src="https://www.youtube.com/embed/3WKw0QdJ-AI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
           </div>
         </div>
 
-        <h2 className="tc">Villanson</h2>
-        <p className="tex-combination tc">Villansón es una banda que fusiona ritmos latinos con el compas de Cádiz y el sur de España tocando versiones de temas que seguramente te sonaran pero con un estilo propio. Villansón asegura fiesta, baile y diversión, al mismo tiempo que ofrece una experiencia musical diferente.
+        <h2 className="tl">Villanson</h2>
+        <p className="tex-combination tl">Villansón es una banda que fusiona ritmos latinos con el compás de Cádiz y el sur de España tocando versiones de temas que seguramente te sonaran pero con un estilo propio. Villansón asegura fiesta, baile y diversión, al mismo tiempo que ofrece una experiencia musical diferente.
           <br/>
           <a href="" target="blank">
             &nbsp;Chema Quirós&nbsp;
@@ -619,17 +639,17 @@ class Main extends React.Component {
           </a>
           (pianista/director musical).
         </p>
-        <div className="grow box">
+        <div className="box">
           <div className="iframe-hide">
 
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CtdNCJ1Mf6s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <iframe title="Villanson Latin Salsa Flamenco" width="100%" height="100%" src="https://www.youtube.com/embed/CtdNCJ1Mf6s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
           </div>
         </div>
 
-        <h2 className="tc">
+        <h2 className="tl">
           &nbsp;Pol Omedes 5tet&nbsp;
         </h2>
-        <p className="tex-combination tc">
+        <p className="tex-combination tl">
           <a href="http://polomedes.com/" target="blank">
             &nbsp;Pol Omedes&nbsp;
           </a>(trompeta),
@@ -651,7 +671,7 @@ class Main extends React.Component {
           <a href="http://polomedes.com/" target="blank">
             &nbsp;Pol Omedes&nbsp;
           </a>
-          es una de las revelaciones más estimulantes de la escena estatal. Lo ha dejado patente con la multitud de proyectos de recorrido que ha liderado y que encabeza actualmente, gracias también a la buena acogida de la prensa y del sector. Entre los últimos reconocimientos hay que destacar el de joven talento del año (2020), concedido por la
+          es una de las revelaciones más estimulantes a nivel nacional. Lo ha dejado patente con la multitud de proyectos de recorrido que ha liderado y que encabeza actualmente, gracias también a la buena acogida de la prensa y del sector. Entre los últimos reconocimientos hay que destacar el de joven talento del año (2020), concedido por la
           <a href="https://amjm.org/es/" target="blank">
             &nbsp;Asociación de Músicos de Jazz y Música Moderna de Cataluña (AMJM)&nbsp;
           </a>.&nbsp;Actualmente se está presentando su último trabajo
@@ -660,14 +680,14 @@ class Main extends React.Component {
           </a>
           y el proyecto ha sido también seleccionado por la
           <a href="http://federacio.joventutsmusicals.cat/" target="blank">
-            &nbsp;Federación de &nbsp;Juventudes Musicales de Cataluña
+            &nbsp;Federación de &nbsp;Juventudes Musicales de Cataluña&nbsp;
           </a>
           durante la temporada 2018 a 2019. La música de Pol tiene pinceladas cubanas conjuntamente con una sonoridad post bop, con un un aire fresco, potente y dinámico. La banda asimila la tradición del jazz sin que ello suponga un prejuicio para dar una visión personal y concreta de los standards, y se abre también a las composiciones propias.
         </p>
-        <div className="grow box">
+        <div className="box tl">
           <div className="iframe-hide">
 
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/k4z8lfE1TQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+            <iframe title="Pol Omedes Jazz Latin" width="100%" height="100%" src="https://www.youtube.com/embed/k4z8lfE1TQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
           </div>
         </div>
 
@@ -682,7 +702,10 @@ class Main extends React.Component {
           : ''}`} style={{
           display: 'none'
         }}>
-        <h2 className="major">IMAGENES</h2>
+        <div>
+          <h2 className="major">IMAGENES</h2>
+        </div>
+
         <ImageGalery/> {close}
       </article>
 
@@ -706,7 +729,7 @@ class Main extends React.Component {
           </div>
           <div className="field">
             <label htmlFor="message">Mensaje</label>
-            <textarea name="message" id="message" rows="4" value="Opps, este formulario no esta disponible todavía. Puedes enviarme un mensaje directamente a malickpercu@hotmail.es o a través de mis redes sociales en los links aquí abajo." disabled></textarea>
+            <textarea name="message" id="message" rows="4" value="Opps, este formulario no esta disponible todavía. Puedes enviarme un mensaje directamente a malickpercu@hotmail.es o a través de mis redes sociales en los links aquí abajo." disabled="disabled"></textarea>
           </div>
           <ul className="actions">
             <li>
@@ -720,16 +743,16 @@ class Main extends React.Component {
         <ul className="icons">
           <li>
             <a href="https://www.youtube.com/channel/UCisnUFE34yH0i6vnWwQGqKw" className="icon fa-youtube" target="blank">
-              <span className="label">facebook</span>
+              <span className="label">Youtube</span>
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/channel/UCisnUFE34yH0i6vnWwQGqKw" className="icon fa-facebook" target="blank">
+            <a href="https://www.facebook.com/Malickpercusion/" className="icon fa-facebook" target="blank">
               <span className="label">Facebook</span>
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/malickmbenguearroyo/?hl=es" className="icon fa-instagram">
+            <a href="https://www.instagram.com/malickmbenguearroyo/?hl=es" className="icon fa-instagram" target="blank">
               <span className="label">Instagram</span>
             </a>
           </li>

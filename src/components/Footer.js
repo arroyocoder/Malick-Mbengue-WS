@@ -6,8 +6,8 @@ const Footer = (props) => (<footer id="footer" style={props.timeout
       display: 'none'
     }
     : {}}>
-  <h1 className="copyright">Mas de mi musica en
-    <a href="https://www.youtube.com/channel/UCisnUFE34yH0i6vnWwQGqKw" className="yellow" target="blank">
+  <h1 className="copyright">Mas de mi música en
+    <a href="https://www.facebook.com/Malickpercusion/" className="yellow" target="blank">
       &nbsp;FACEBOOK&nbsp;
     </a>,
     <a href="https://www.instagram.com/malickmbenguearroyo/?hl=es" className="yellow" target="blank">
